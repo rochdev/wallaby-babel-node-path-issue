@@ -17,7 +17,7 @@ module.exports = function(wallaby) {
     env: {
       type: 'node',
       params: {
-        env: 'NODE_ENV=test;NODE_PATH=' + path.join(wallaby.localProjectDir, 'src')
+        env: 'NODE_ENV=test;NODE_PATH=' + path.join(wallaby.projectCacheDir, 'src')
       }
     }
   };
